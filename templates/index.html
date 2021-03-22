@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}" />
     <title>Document</title>
   </head>
   <body>
     <h1>This is first page</h1>
+    <a href="{% url 'about' %}">About Page</a>
     <ul>
       <li>views.py</li>
       <li>urls.py</li>
